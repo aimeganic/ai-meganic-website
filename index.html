@@ -3,92 +3,432 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AI Meganic - Smart mobile repairing assistant for technicians.">
-  <title>AI Meganic | Smart Mobile Repairing Assistant</title>
+
+  <title>AI Meganic – Mobile Repair & AI Diagnostic Platform</title>
+
+  <meta
+    name="description"
+    content="AI Meganic is an AI-powered mobile phone repair platform for technicians, offering AI diagnostics, repair solutions, hardware information and schematics."
+  >
+
+  <meta name="author" content="AI Meganic">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <link
+    rel="canonical"
+    href="https://aimeganic.github.io/ai-meganic-website/"
+  >
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI Meganic – Mobile Repair & AI Diagnostic Platform">
+  <meta
+    property="og:description"
+    content="AI-powered mobile repair technology for technicians."
+  >
+  <meta
+    property="og:url"
+    content="https://aimeganic.github.io/ai-meganic-website/"
+  >
+  <meta property="og:site_name" content="AI Meganic">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Meganic – Mobile Repair & AI Diagnostic Platform">
+  <meta
+    name="twitter:description"
+    content="AI-powered mobile repair technology for technicians."
+  >
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header class="header">
-    <a class="brand" href="#home" aria-label="AI Meganic Home">
-      <span class="brand-mark">AI</span>
-      <span>
-        <strong>MEGANIC</strong>
-        <small>REPAIR MADE SIMPLE</small>
-      </span>
-    </a>
-    <nav class="nav" id="nav">
-      <a class="active" href="#home">Home</a>
-      <a href="#features">Features</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="btn btn-small" href="#features">Get Started</a>
-    <button class="menu" id="menu" aria-label="Open menu">☰</button>
+    <div class="container nav">
+
+      <a href="#" class="logo">
+        <span class="logo-icon">AI</span>
+        <span>Meganic</span>
+      </a>
+
+      <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#download">Download</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </div>
   </header>
 
+
+  <!-- HERO -->
   <main>
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow">SMART • RELIABLE • FOR TECHNICIANS</p>
-        <h1><span>AI</span> MEGANIC</h1>
-        <h2>Smart Mobile Repairing Assistant</h2>
-        <p class="tagline">Diagnose. Repair. Solve.</p>
-        <p class="lead">AI-powered guidance, hardware solutions, and schematic information for mobile repair.</p>
-        <a class="btn" href="#features">Explore Features <span>→</span></a>
-        <div class="trust">
-          <div>✓ <span>Repair focused</span></div>
-          <div>⚡ <span>Save time</span></div>
-          <div>◉ <span>For technicians</span></div>
+
+    <section id="home" class="hero">
+      <div class="container hero-content">
+
+        <div class="hero-text">
+
+          <div class="badge">
+            ⚡ AI-Powered Mobile Repair Technology
+          </div>
+
+          <h1>
+            Smarter Mobile Repair
+            <span>with AI Meganic</span>
+          </h1>
+
+          <p>
+            AI Meganic is a smart platform designed for mobile repair
+            technicians. Diagnose problems, explore hardware solutions,
+            understand schematics and get technical guidance faster.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#download" class="btn primary">
+              📱 Download App
+            </a>
+
+            <a href="#features" class="btn secondary">
+              Explore Features
+            </a>
+          </div>
+
         </div>
-      </div>
-      <div class="hero-art">
-        <img src="assets/hero-design.png" alt="AI Meganic mobile repair technology">
+
+        <div class="hero-card">
+
+          <div class="phone-frame">
+
+            <div class="phone-top"></div>
+
+            <div class="phone-screen">
+
+              <div class="ai-circle">AI</div>
+
+              <h3>AI Meganic</h3>
+
+              <p>Mobile Repair Assistant</p>
+
+              <div class="scan-box">
+                <span>🔍</span>
+                AI Diagnostic
+              </div>
+
+              <div class="scan-box">
+                <span>🔧</span>
+                Hardware Solutions
+              </div>
+
+              <div class="scan-box">
+                <span>📐</span>
+                Schematics
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
     </section>
 
-    <section class="features section" id="features">
-      <p class="eyebrow blue">EXPLORE</p>
-      <h2>AI Meganic Features</h2>
-      <p class="section-lead">Everything you need for professional mobile repair, in one place.</p>
-      <div class="cards">
-        <article class="card">
-          <div class="icon blue-icon">🤖</div>
-          <h3>AI Diagnostic</h3>
-          <p>Smart assistance for mobile fault diagnosis and repair guidance.</p>
-        </article>
-        <article class="card">
-          <div class="icon green-icon">🛠</div>
-          <h3>Hardware Solutions</h3>
-          <p>Find practical hardware solutions for common mobile problems.</p>
-        </article>
-        <article class="card">
-          <div class="icon purple-icon">▧</div>
-          <h3>Schematics</h3>
-          <p>Access mobile board views, traces, components and schematic information.</p>
-        </article>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <span>POWERFUL TOOLS</span>
+          <h2>Everything a Technician Needs</h2>
+          <p>
+            AI Meganic brings essential mobile repair information
+            and intelligent diagnostic tools together.
+          </p>
+        </div>
+
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <h3>AI Diagnostic</h3>
+            <p>
+              Describe a phone problem and get intelligent
+              technical analysis and repair guidance.
+            </p>
+          </article>
+
+
+          <article class="feature-card">
+            <div class="feature-icon">🔧</div>
+            <h3>Hardware Solutions</h3>
+            <p>
+              Explore hardware faults, components,
+              solutions and technical repair information.
+            </p>
+          </article>
+
+
+          <article class="feature-card">
+            <div class="feature-icon">📐</div>
+            <h3>Schematics</h3>
+            <p>
+              Access organized schematic and board
+              information for supported devices.
+            </p>
+          </article>
+
+
+          <article class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Phone Diagnostic</h3>
+            <p>
+              Connect compatible devices and inspect
+              useful diagnostic information.
+            </p>
+          </article>
+
+
+          <article class="feature-card">
+            <div class="feature-icon">🧰</div>
+            <h3>Technician Tools</h3>
+            <p>
+              Useful tools designed around the daily
+              workflow of mobile repair technicians.
+            </p>
+          </article>
+
+
+          <article class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <h3>Knowledge Base</h3>
+            <p>
+              Find organized repair knowledge and
+              verified technical solutions.
+            </p>
+          </article>
+
+        </div>
+
       </div>
+
     </section>
 
-    <section class="about section" id="about">
-      <div>
-        <p class="eyebrow blue">ABOUT</p>
-        <h2>About AI Meganic</h2>
-        <p>AI Meganic is a smart mobile repair assistant for technicians. Diagnose faults, find hardware solutions, and access schematics easily.</p>
-        <p>Our goal is to make mobile repairing simple, faster, and more reliable.</p>
-        <a class="btn" href="#contact">Learn More <span>→</span></a>
+
+    <!-- HOW IT WORKS -->
+    <section class="section light-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <span>SIMPLE WORKFLOW</span>
+          <h2>How AI Meganic Works</h2>
+        </div>
+
+
+        <div class="steps">
+
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Select Device</h3>
+            <p>
+              Choose the phone model or provide device information.
+            </p>
+          </div>
+
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Describe Problem</h3>
+            <p>
+              Enter the symptoms, measurements or repair issue.
+            </p>
+          </div>
+
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Get Guidance</h3>
+            <p>
+              AI Meganic helps analyze the problem and find
+              relevant technical information.
+            </p>
+          </div>
+
+        </div>
+
       </div>
-      <div class="about-box">
-        <div class="phone">AI<br><b>MEGANIC</b><small>Smart Repair Tools</small></div>
-      </div>
+
     </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
+      <div class="container about-grid">
+
+        <div>
+          <span class="small-title">ABOUT AI MEGANIC</span>
+
+          <h2>
+            Built for Mobile Repair Technicians
+          </h2>
+
+          <p>
+            AI Meganic is designed to bring modern AI technology
+            into the mobile phone repair industry.
+          </p>
+
+          <p>
+            The platform combines intelligent diagnostics,
+            technical knowledge, hardware solutions and
+            schematic information in one place.
+          </p>
+
+          <a href="#download" class="btn primary">
+            Get AI Meganic
+          </a>
+        </div>
+
+
+        <div class="about-box">
+
+          <div class="about-stat">
+            <strong>AI</strong>
+            <span>Smart Diagnostics</span>
+          </div>
+
+          <div class="about-stat">
+            <strong>HW</strong>
+            <span>Hardware Solutions</span>
+          </div>
+
+          <div class="about-stat">
+            <strong>PCB</strong>
+            <span>Board Information</span>
+          </div>
+
+          <div class="about-stat">
+            <strong>24/7</strong>
+            <span>Technical Knowledge</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- DOWNLOAD -->
+    <section id="download" class="download-section">
+
+      <div class="container download-content">
+
+        <div>
+
+          <span class="small-title">
+            AI MEGANIC APP
+          </span>
+
+          <h2>
+            Take Your Repair Assistant With You
+          </h2>
+
+          <p>
+            Download AI Meganic and access smart mobile repair
+            tools and technical information from your phone.
+          </p>
+
+        </div>
+
+
+        <div class="download-buttons">
+
+          <!-- Replace # with your real Google Play URL after publishing -->
+          <a href="#" class="play-button">
+
+            <span class="play-icon">▶</span>
+
+            <span>
+              <small>GET IT ON</small>
+              <strong>Google Play</strong>
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <span>CONTACT</span>
+          <h2>AI Meganic</h2>
+          <p>
+            Mobile repair technology made smarter.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
 
-  <footer id="contact">
-    <div class="footer-brand">AI MEGANIC<br><small>REPAIR MADE SIMPLE</small></div>
-    <p>© 2026 AI Meganic. All rights reserved.</p>
-    <div class="footer-links"><a href="#">Support</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-content">
+
+      <div>
+        <a href="#" class="logo">
+          <span class="logo-icon">AI</span>
+          <span>Meganic</span>
+        </a>
+
+        <p>
+          AI-powered mobile repair technology.
+        </p>
+      </div>
+
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#download">Download</a>
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+      © 2026 AI Meganic. All rights reserved.
+    </div>
+
   </footer>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
